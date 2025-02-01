@@ -1,5 +1,5 @@
 ARG VARIANT="debian-10"
-FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
+FROM mcr.microsoft.com/devcontainers/base:0-${VARIANT}
 
 RUN export DEBIAN_FRONTEND=noninteractive               && \
     apt-get update                                      && \
